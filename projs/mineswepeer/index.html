@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine-sweeper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initGame()" >
+    <div class="levels">
+        <button class="level" onclick="chosenLevel(0)">Beginner</button>
+        <button class="level" onclick="chosenLevel(1)">Medium</button>
+        <button class="level" onclick="chosenLevel(2)">Expert</button>
+    </div>
+    <hr>
+    <div><span  class = "timer">00:00</span></div>
+    <div ><span class= "minescount"></span></span></div>
+    <h1 class = "Emoji" onclick="initGame()">🙂</h1>
+    <table oncontextmenu="return false;" >
+        <tbody class="board"></tbody>
+    </table>
+
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

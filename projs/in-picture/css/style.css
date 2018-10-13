@@ -1,0 +1,28 @@
+
+.background {
+    background-color: lightslategray;
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 50% 50% 50% 50% / 10% 10% 10% 10% ;
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.option1, .option2{
+    border: 4px outset black;
+    margin: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.option1:hover,.option2:hover {
+    border:  4px inset darkred;
+}
+

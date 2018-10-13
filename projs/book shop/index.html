@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body class="container" onload="init()">
+    <div class="container">
+        <h1>Welcome To My Book Shop </h1>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li><a class="page-link prev" href="#" onclick="goPrevPage()">Previous</a></li>
+            <li><a class="page-link next" href="#" onclick="goNextPage()">Next</a></li>
+        </ul>
+    </nav>
+
+    <table class="book-table table table-sm table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Price</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="book-details"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="lib/bs4/js/bootstrap.min.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-main.js"></script>
+</body>
+
+</html>
