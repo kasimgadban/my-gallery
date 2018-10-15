@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body class="" onload="init()">
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="input-group">
+                    <select class="custom-select-sm" onchange="onSetLang(this.value)">
+                      <option value="en">English</option>
+                      <option value="he">עברית</option>
+                    </select>
+                  </div>
+                  
+
+            <h1 class="display-3" data-trans="title">Book Shop</h1>
+
+
+            <!-- Add Book modal -->
+
+            <button class="add-book btn btn-light" data-toggle="modal" data-target=".add-book-modal" data-trans="AddNewBook">
+                Add new book</button>
+            <div class="
+                modal fade add-book-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="add-book-modal add-book-modal-content">
+                        <div class="input-group input-group-sm mb-3">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" data-trans="newbookName">Book Name</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                id="new-book-name" data-trans="newNameHolder" placeholder="new book name">
+                        </div>
+
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" data-trans="newbookPrice">Book Price</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                id="new-book-price" data-trans="newPriceHolder" placeholder="new book price">
+                        </div>
+                        <button class="btn btn-light" data-dismiss="modal" onclick="onAddNewBook()" data-trans="addBook">Add
+                            Book</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <table class="book-table table table-sm table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col" data-trans="bookId">Id</th>
+                        <th scope="col" data-trans="bookTitle">Title</th>
+                        <th scope="col" data-trans="bookPrice">Price</th>
+                        <th scope="col" data-trans="actions">Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li><a class="page-link prev btn-sm" href="#" onclick="goPrevPage()" data-trans="prev">Previous</a></li>
+                    <li><a class="page-link next btn-sm" href="#" onclick="goNextPage()" data-trans="next">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="book-details "></div>
+
+        <script src="js/i18n-service.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="lib/bs4/js/bootstrap.min.js"></script>
+        <script src="js/util-service.js"></script>
+        <script src="js/book-service.js"></script>
+        <script src="js/book-main.js"></script>
+</body>
+
+</html>
