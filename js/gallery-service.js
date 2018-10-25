@@ -9,7 +9,7 @@ function creatProjects(){
         creatProject('chess','chess','Lets play chess!','chess board game','projs/mister-chess/index.html'),
         creatProject('guess who','guess who','Think of someone..','Let me guess who you think about','projs/guess-who/index.html'),
         creatProject('in picture','in picture','Whats in the picture?','Click the sentence that describes the picture','projs/in-picture/index.html'),
-        creatProject('mineswepeer','mineswepeer','my mineswepeer edition','beta version!!','projs/mineswepeer/index.html')
+        creatProject('mineswepeer','mineswepeer','my mineswepeer edition','beta version!!','projs/sprint2/index.html')
     ]
 }
 
